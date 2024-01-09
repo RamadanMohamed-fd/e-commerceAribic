@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import {
-  bannerImgOne,
-  bannerImgTwo,
-  bannerImgThree,
-} from "../../assets/images";
-import Image from "../designLayouts/Image";
+// import {
+//   bannerImgOne,
+//   bannerImgTwo,
+//   bannerImgThree,m1,m2,m3,m4
+// } from "../../assets/images/banner";
 
+import Image from "../designLayouts/Image";
+import img1 from "../../assets/images/banner/m1.png"
+import img2 from "../../assets/images/banner/m2.png"
+import img3 from "../../assets/images/banner/m3.png"
 const Banner = () => {
   const [dotActive, setDocActive] = useState(0);
   const settings = {
@@ -38,8 +41,8 @@ const Banner = () => {
           i === dotActive
             ? {
                 width: "30px",
-                color: "#262626",
-                borderRight: "3px #262626 solid",
+                color: "#744597",
+                borderRight: "3px #744597 solid",
                 padding: "8px 0",
                 cursor: "pointer",
               }
@@ -78,8 +81,8 @@ const Banner = () => {
                 i === dotActive
                   ? {
                       width: "25px",
-                      color: "#262626",
-                      borderRight: "3px #262626 solid",
+                      color: "#744597",
+                      borderRight: "3px #744597 solid",
                       cursor: "pointer",
                       fontSize: "12px",
                     }
@@ -100,21 +103,21 @@ const Banner = () => {
     ],
   };
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white h-[500px] overflow-hidden">
       <Slider {...settings}>
         <Link to="/offer">
           <div>
-            <Image imgSrc={bannerImgOne} />
+            <Image imgSrc={img1} />
           </div>
         </Link>
         <Link to="/offer">
           <div>
-            <Image imgSrc={bannerImgTwo} />
+            <Image imgSrc={img2} />
           </div>
         </Link>
         <Link to="/offer">
           <div>
-            <Image imgSrc={bannerImgThree} />
+            <Image imgSrc={img3} />
           </div>
         </Link>
       </Slider>

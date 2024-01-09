@@ -2,19 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
-// import {
-//   newArrOne,
-//   newArrTwo,
-//   newArrThree,
-//   newArrFour,
-// } from "../../../assets/images/index";
-import newArrOne  from "../../../assets/images/product/20.jpg";
-import newArrTwo from "../../../assets/images/product/21.jpg";
-import newArrThree  from "../../../assets/images/product/22.jpg";
+import newArrOne  from "../../../assets/images/product/25.jpg";
+import newArrTwo from "../../../assets/images/product/25.jpg";
+import newArrThree  from "../../../assets/images/product/25.jpg";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
 import YearProduct from "../YearProduct/YearProduct";
-import m2 from "../../../assets/images/banner/m2.png"
+import m2 from "../../../assets/images/banner/m3.png"
 const NewArrivals = () => {
   const settings = {
     infinite: true,
@@ -55,7 +49,7 @@ const NewArrivals = () => {
       <YearProduct source={ m2} />
        <div className="w-full pb-16">
         <div className="w-[98%] mb-2">
-                <Heading heading="المكياج" />
+                <Heading heading="العدسات" />
 
         </div>
         <Slider {...settings}>
@@ -63,7 +57,7 @@ const NewArrivals = () => {
           <Product
             _id="100001"
             img={newArrOne}
-            productName="بودرة سحرية مضغوطة من بلوفير درجة -p14"
+            productName=" عدسات شهرية3D-راينو"
             price="44.00"
             color="Black"
             // badge={true}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +12,23 @@
     @apply hover:underline underline-offset-2 cursor-pointer text-gray-300 hover:text-white;
   }
 }
+* {
+  font-family: 'Cairo', sans-serif !important;
+}
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  cursor: all-scroll;
+  background: #eee;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #744597;
+  transition: 0.3s;
+
+}
 /* ============= NavLink active Start here ============== */
 nav .active li {
   color: black;

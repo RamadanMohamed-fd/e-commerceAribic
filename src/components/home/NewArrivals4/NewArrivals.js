@@ -8,13 +8,12 @@ import Product from "../Products/Product";
 //   newArrThree,
 //   newArrFour,
 // } from "../../../assets/images/index";
-import newArrOne  from "../../../assets/images/product/20.jpg";
-import newArrTwo from "../../../assets/images/product/21.jpg";
-import newArrThree  from "../../../assets/images/product/22.jpg";
+import newArrOne  from "../../../assets/images/product/41.jpg";
+import newArrTwo from "../../../assets/images/product/42.jpg";
+import newArrThree  from "../../../assets/images/product/43.jpg";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
-import YearProduct from "../YearProduct/YearProduct";
-import m2 from "../../../assets/images/banner/m2.png"
+
 const NewArrivals = () => {
   const settings = {
     infinite: true,
@@ -52,10 +51,9 @@ const NewArrivals = () => {
   };
   return (
     <div className="">
-      <YearProduct source={ m2} />
        <div className="w-full pb-16">
         <div className="w-[98%] mb-2">
-                <Heading heading="المكياج" />
+                <Heading heading="العناية بالشعر" />
 
         </div>
         <Slider {...settings}>

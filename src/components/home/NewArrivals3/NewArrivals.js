@@ -8,13 +8,15 @@ import Product from "../Products/Product";
 //   newArrThree,
 //   newArrFour,
 // } from "../../../assets/images/index";
-import newArrOne  from "../../../assets/images/product/20.jpg";
-import newArrTwo from "../../../assets/images/product/21.jpg";
-import newArrThree  from "../../../assets/images/product/22.jpg";
+import newArrOne  from "../../../assets/images/product/32.jpg";
+import newArrTwo from "../../../assets/images/product/32.jpg";
+import newArrThree  from "../../../assets/images/product/33.jpg";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
-import YearProduct from "../YearProduct/YearProduct";
-import m2 from "../../../assets/images/banner/m2.png"
+// import YearProduct from "../YearProduct/YearProduct";
+import m1 from "../../../assets/images/banner/31.png"
+import m2 from "../../../assets/images/banner/32.png"
+import Image from "../../designLayouts/Image";
 const NewArrivals = () => {
   const settings = {
     infinite: true,
@@ -51,11 +53,20 @@ const NewArrivals = () => {
     ],
   };
   return (
-    <div className="">
-      <YearProduct source={ m2} />
+    <div className="w-[98%] mx-auto">
+      <div className="flex gap-3 items-center mb-20">
+        <Image
+          className="w-1/2  hidden md:inline-block"
+          imgSrc={m1}
+        />
+          <Image
+          className="w-1/2  hidden md:inline-block"
+          imgSrc={m2}
+        />
+      </div>
        <div className="w-full pb-16">
         <div className="w-[98%] mb-2">
-                <Heading heading="المكياج" />
+                <Heading heading="العناية بالبشرة" />
 
         </div>
         <Slider {...settings}>
@@ -63,7 +74,7 @@ const NewArrivals = () => {
           <Product
             _id="100001"
             img={newArrOne}
-            productName="بودرة سحرية مضغوطة من بلوفير درجة -p14"
+            productName=" غسول الوجه الفعال بالفحم والقهوة"
             price="44.00"
             color="Black"
             // badge={true}
