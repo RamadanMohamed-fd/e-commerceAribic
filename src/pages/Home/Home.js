@@ -14,10 +14,10 @@ import NewArrivals4 from "../../components/home/NewArrivals4/NewArrivals";
 import Fast from "../../components/home/Fast";
 const Home = () => {
   return (
-    <div className="w-full mx-auto text-primeColor">
+    <div className="max-w-container mx-auto text-primeColor">
       <Banner />
       {/* <BannerBottom /> */}
-      <div className="max-w-container mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* <Sale /> */}
         <Brands />
         <ShopbyCategories/>

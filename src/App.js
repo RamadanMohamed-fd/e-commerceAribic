@@ -7,7 +7,6 @@ import {
   ScrollRestoration,
 } from "react-router-dom";
 import Footer from "./components/home/Footer/Footer";
-import FooterBottom from "./components/home/Footer/FooterBottom";
 import Header from "./components/home/Header/Header";
 import HeaderBottom from "./components/home/Header/HeaderBottom";
 // import SpecialCase from "./components/SpecialCase/SpecialCase";
@@ -25,14 +24,14 @@ import Shop from "./pages/Shop/Shop";
 
 const Layout = () => {
   return (
-    <div>
+    <div >
       <Header />
       <HeaderBottom />
       {/* <SpecialCase /> */}
       <ScrollRestoration />
       <Outlet />
       <Footer />
-      <FooterBottom />
+   
     </div>
   );
 };

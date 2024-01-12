@@ -93,7 +93,7 @@ const Product = (props) => {
           <h2 className=" text-primeColor font-medium  text-sm text-center w-full">
             {props.productName}
           </h2>
-          <p className=" text-[14px] flex flex-row-reverse gap-1 mb-[2px] font-semibold text-black text-lg">{props.price}<p className="">ر.س</p></p>
+          <div className=" text-[14px] flex flex-row-reverse gap-1 mb-[2px] font-semibold text-black text-lg">{props.price}<p className="">ر.س</p></div>
         </div>
         <div  onClick={() =>
               {  dispatch(
@@ -112,10 +112,10 @@ const Product = (props) => {
          
         }
               } className=" bg-primeColor active:bg-opacity-70 duration-300 hover:bg-opacity-95 cursor-pointer flex flex-row-reverse items-center justify-center gap-2 py-2 text-white text-center w-full rounded-md mt-0">
-             <p>
+             <div>
          {span? <FaCircleNotch className=" animate-spin text-sm"/> :<FaShoppingCart />}
           
-              </p>
+              </div>
               إضافة إلى السلة
            
         </div>
